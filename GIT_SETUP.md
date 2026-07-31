@@ -2,6 +2,36 @@
 
 로컬(내 컴퓨터)에서 이 레포로 작업하기 위한 Git 설치·설정 방법입니다.
 
+## Windows에서 처음부터 따라하기 (초보자용)
+
+1. **Git 설치**: https://git-scm.com/download/win 에서 "64-bit Git for Windows Setup"을
+   내려받아 실행하고, 설정은 그대로 두고 **Next**만 눌러 설치합니다.
+2. **Git Bash 열기**: 시작 메뉴에서 "Git Bash"를 검색해 실행합니다.
+   이후 모든 명령은 이 창에 입력합니다. (붙여넣기: 마우스 오른쪽 클릭 → Paste)
+3. **내 정보 등록** (한 번만):
+
+   ```bash
+   git config --global user.name "GitHub아이디"
+   git config --global user.email "GitHub이메일"
+   git config --global core.quotepath false
+   ```
+
+4. **레포 가져오기** (한 번만):
+
+   ```bash
+   cd ~/Documents
+   git clone https://github.com/ydg1021/test.git
+   cd test
+   ```
+
+   문서(Documents) 폴더 안에 `test` 폴더가 생깁니다.
+5. **GitHub 로그인**: 처음 `git push` 할 때 "Connect to GitHub" 창이 뜨면
+   **Sign in with your browser**를 눌러 브라우저에서 로그인하면 됩니다. 한 번만 하면 기억합니다.
+
+이후 평소 작업은 [4. 기본 작업 흐름](#4-기본-작업-흐름)만 반복하면 됩니다.
+
+---
+
 ## 1. Git 설치
 
 | OS | 방법 |
